@@ -32,7 +32,7 @@ class App extends React.Component {
 
   componentWillUnmount() {
     BackHandler.removeEventListener('hardwareBackPress', this.props.backAndroidHandler || this.onBackPress);
-    Linking.removeEventListener('url', this.handleDeepURL);
+    // Linking.removeEventListener('url', this.handleDeepURL);
   }
 
   onBackPress = () => this.props.navigationStore.pop();
